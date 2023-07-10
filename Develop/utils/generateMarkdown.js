@@ -39,6 +39,8 @@ function renderLicenseLink(license) {
 
 //function to generate markdown for README
 function generateMarkdown(data) {
+  const starterCodeSource = 'https://github.com/coding-boot-camp/potential-enigma.git'; 
+
   return `# ${data.title}
 
 ## Description
@@ -51,6 +53,7 @@ ${data.description}
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+- [Starter Code Source](#starter-code-source)
 
 ## Installation
 ${data.installation}
@@ -77,6 +80,9 @@ If you have any questions, please reach out to me:
 GitHub: [${data.github}](https://github.com/${data.github})
 
 Email: ${data.email}
+
+## Starter Code Source
+The starter code for this project is sourced from [Potential-enigma](${starterCodeSource}).
 
 `;
 }
